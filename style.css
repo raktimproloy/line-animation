@@ -1,0 +1,51 @@
+.upperComponent{
+	height: 2000px;
+	width: 100px;
+	background-color: aqua;
+}
+
+
+.path1{
+	display: none;
+    stroke-dasharray:5000;
+	stroke-dashoffset:5000;
+	animation: dash 5s linear forwards;
+}
+.path2{
+	display: none;
+    stroke-dasharray:5000;
+	stroke-dashoffset:5000;
+	animation: dash 5s linear forwards;
+	animation-delay: .5s;
+}
+.path3{
+	display: none;
+    stroke-dasharray:2300;
+	stroke-dashoffset:-1300;
+	animation: dashBack 1s linear forwards;
+	animation-delay: .3s;
+}
+.path4{
+	display: none;
+    stroke-dasharray:300;
+	stroke-dashoffset:300;
+	animation: dash 1s linear forwards;
+	animation-delay: 1.3s;
+}
+.path5{
+	display: none;
+    stroke-dasharray:1700;
+	stroke-dashoffset:-700;
+	animation: dashBack 1s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dashBack {
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
